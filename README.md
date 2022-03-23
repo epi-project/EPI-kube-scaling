@@ -9,8 +9,8 @@ In this repository we add scaling techniques to the EPI framework setup to demon
   $ kubectl apply -f firewall.yaml #BF3 = The firewall server
   $ kubectl apply -f proxy.yaml #The SOCKS proxy
   $ kubectl apply -f socat.yaml #The end server
-
-##Start the client script
+```
+## Start the client script
 
 ```shell
   $ docker-compose up -d
@@ -20,10 +20,10 @@ In this repository we add scaling techniques to the EPI framework setup to demon
   $ locust -f ./locust.py --headless -u <number of clients> -r <spawn rate> -H <destination IP>
 ```
 
-##In HPA and VPA path there's example deployment of scalers/ service.
+## In HPA and VPA path there's example deployment of scalers/ service.
 ##Deploy if needed.
   
-##To collect matrices, you need to successfully deploy the metric server, after you can run the collecting script
+## To collect matrices, you need to successfully deploy the metric server, after you can run the collecting script
 ```shell
   $ cd Scripts 
   $ ./getResourcesCSV.sh --help 
