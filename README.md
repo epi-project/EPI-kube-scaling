@@ -10,7 +10,7 @@ In this repository we add scaling techniques to the EPI framework setup to demon
   $ kubectl apply -f proxy.yaml #The SOCKS proxy
   $ kubectl apply -f socat.yaml #The end server
 ```
-## Start the client script, refer to the poc repository 
+## Start the client script, refer to the epif-poc repository 
 
 ```shell
   $ docker-compose up -d
