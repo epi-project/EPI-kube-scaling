@@ -10,7 +10,7 @@ In this repository we add scaling techniques to the EPI framework setup to demon
   $ kubectl apply -f proxy.yaml #The SOCKS proxy
   $ kubectl apply -f socat.yaml #The end server
 ```
-## Start the client script, refer to the epif-poc repository 
+## Start the client script, refer to the epif-pocsocks-chaining/ repository 
 
 ```shell
   $ docker-compose up -d
@@ -20,7 +20,7 @@ In this repository we add scaling techniques to the EPI framework setup to demon
   $ locust -f ./locust.py --headless -u <number of clients> -r <spawn rate> -H <destination IP>
 ```
 
-## In HPA and VPA path there's example deployment of scalers/ service.
+## In HPA and VPA path there's example deployment of scalers per service.
 ##Deploy if needed.
   
 ## To collect matrices, you need to successfully deploy the metric server, after you can run the collecting script
